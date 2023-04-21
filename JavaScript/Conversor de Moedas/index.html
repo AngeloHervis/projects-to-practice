@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Conversor de Moeda</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container my-5">
+        <h1>Conversor de Moeda</h1>
+        <form>
+            <div class="form-group">
+                <label for="real">Real (BRL):</label>
+                <input type="number" class="form-control" id="real">
+            </div>
+            <div class="form-group">
+                <label for="dolar">Dólar Americano (USD):</label>
+                <input type="number" class="form-control" id="dolar" readonly>
+            </div>
+            <div class="form-group">
+                <label for="euro">Euro (EUR):</label>
+                <input type="number" class="form-control" id="euro" readonly>
+            </div>
+            <div class="form-group">
+                <label for="libra">Libra Esterlina (GBP):</label>
+                <input type="number" class="form-control" id="libra" readonly>
+            </div>
+            <div class="form-group">
+                <label for="iene">Iene Japonês (JPY):</label>
+                <input type="number" class="form-control" id="iene" readonly>
+            </div>
+            <div class="form-group">
+                <label for="yuan">Yuan Chinês (CNY):</label>
+                <input type="number" class="form-control" id="yuan" readonly>
+            </div>
+        </form>
+    </div>
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

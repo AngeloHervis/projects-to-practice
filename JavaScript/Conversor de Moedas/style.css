@@ -1,0 +1,43 @@
+.container {
+	margin-top: 50px;
+}
+
+.form-control {
+	font-size: 16px;
+	padding: 10px;
+}
+
+.btn {
+	padding: 10px 20px;
+	font-size: 18px;
+	margin-top: 10px;
+}
+
+.resultados {
+	margin-top: 20px;
+}
+
+.resultado {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 10px;
+}
+
+.resultado .nome-moeda {
+	font-weight: bold;
+	margin-right: 10px;
+}
+
+.resultado input {
+	text-align: center;
+	width: 150px;
+	font-weight: bold;
+}
+
+@media (max-width: 767px) {
+	.resultado input {
+		width: 100%;
+	}
+}
