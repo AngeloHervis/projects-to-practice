@@ -8,7 +8,14 @@
 body {
   height: 100vh;
   display: flex;
-  background: #060AB2;
+  background: linear-gradient(340deg, #ff52d7 0, 
+  #fe4ade 12.5%,
+   #ea44e5 25%, #d23fec 37.5%,
+    #b53cf2 50%,
+     #923cf8 62.5%,
+      #633ffe 75%,
+       #0044ff 87.5%,
+        #0048ff 100%);
 }
 
 .memory-game {
@@ -45,7 +52,7 @@ body {
   padding: 20px;
   position: absolute;
   border-radius: 5px;
-  background: #1C7CCC;
+  background: #000000cf;
  backface-visibility: hidden;
 }
 
