@@ -1,0 +1,131 @@
+  h1 {
+    text-align: center;
+    font-size: 36px;
+    color: #333;
+    margin-top: 40px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+  }
+  
+  label {
+    font-size: 20px;
+    color: #333;
+    margin-right: 10px;
+  }
+  
+  input[type="text"] {
+    font-size: 18px;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    flex: 1;
+  }
+  
+  button[type="button"] {
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  
+  button[type="button"]:hover {
+    background-color: #555;
+  }
+  
+  input[type="checkbox"] {
+    margin-left: 10px;
+    transform: scale(1.5);
+  }
+  
+  ul li {
+    list-style: none;
+    padding: 10px 0;
+    padding-left: 30px;
+    position: relative;
+    font-size: 28px;
+  }
+  
+  ul li::before {
+    content: "";
+    position: absolute;
+    top: 12px;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #3A506B;
+  }
+  
+  li:before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ddd;
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  li:hover:before {
+    background-color: #333;
+  }
+  
+  li.importante:before {
+    background-color: #ff9933;
+  }
+  
+  li.excluida {
+    display: none;
+  }
+  
+  button.excluir {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  
+  button.excluir:before,
+  button.excluir:after {
+    content: "";
+    width: 20px;
+    height: 2px;
+    background-color: #333;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  button.excluir:before {
+    transform: rotate(45deg);
+  }
+  
+  button.excluir:after {
+    transform: rotate(-45deg);
+  }
+  
+  button.excluir:before {
+    content: "\f1f8";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 16px;
+    color: #fff;
+    margin-right: 5px;
+  }
+  

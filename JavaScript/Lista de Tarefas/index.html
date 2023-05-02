@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Lista de Tarefas</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+</head>
+
+<body>
+    <h1>Minha Lista de Tarefas</h1>
+
+    <form onsubmit="return false;">
+        <label for="nova-tarefa">Adicionar nova tarefa:</label>
+        <input type="text" id="nova-tarefa">
+        <button type="button" onclick="adicionarTarefa()">Adicionar</button>
+        <label for="importante" class="">Importante:</label>
+        <input type="checkbox" id="importante">
+    </form>
+
+    <ul id="lista-de-tarefas">
+
+    </ul>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
