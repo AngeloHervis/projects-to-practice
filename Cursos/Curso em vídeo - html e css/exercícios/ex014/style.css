@@ -1,0 +1,17 @@
+body {
+    background-color: aquamarine;
+    font-family: cursive;
+    font-size: 20px;
+}
+
+h1{
+    color: darkgoldenrod;
+}
+
+h2{
+    color: hotpink;
+}
+
+p{
+    text-align: justify;
+}
