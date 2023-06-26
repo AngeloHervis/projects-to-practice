@@ -11,7 +11,6 @@ while (opção !== '6') {
   valores.lado = '';
   valores.baseMaior = '';
   valores.baseMenor = '';
-  valores.pi = 3.14;
   valores.raio = '';
 
   switch(opção) {
@@ -21,16 +20,31 @@ while (opção !== '6') {
       calcularAreaTriangulo(valores.base, valores.altura);
       break;
 
+    case '2':
+          valores.base = parseFloat(prompt("Qual é o valor da base do retângulo?"));
+          valores.altura = parseFloat(prompt("Qual é o valor da altura do retângulo?"));
+          calcularAreaRetângulo(valores.base, valores.altura);
+          break;
 
-        case '2':
+    case '3':
+          valores.lado = parseFloat(prompt("Qual é o valor do lado do quadrado?"));
+          calcularAreaQuadrado(valores.lado);
+          break;
 
-        case '3':
+    case '4':
+          valores.baseMaior = parseFloat(prompt("Qual é o valor da base maior do trapézio?"));
+          valores.baseMenor = parseFloat(prompt("Qual é o valor da base menor do trapézio?"));
+          valores.altura = parseFloat(prompt("Qual é o valor da altura do trapézio?"));
+          calcularAreaTrapezio(valores.baseMaior, valores.baseMenor, valores.altura);
+          break;
 
-        case '4':
+    case '5':
+                valores.raio = parseFloat(prompt("Qual é o valor do raio do círculo?"));
+      calcularAreaCirculo(valores.raio);
+      break;
 
-        case '5':
-
-        case '6':
+    case '6':
+          alert("Saindo do programa...")
 
         default:
             alert("Opção inválida. Por favor, escolha novamente.");
@@ -43,18 +57,15 @@ while (opção !== '6') {
     alert("O valor da área do triângulo é: " + (base * altura) / 2);
   }
   
-  function calcularAreaTriangulo(base, altura) {
-    alert("O valor da área do triângulo é: " + (base * altura) / 2);
+  function calcularAreaRetângulo(base, altura) {
+    alert("O valor da área do retângulo é: " + (base * altura));
   }
-  function calcularAreaTriangulo(base, altura) {
-    alert("O valor da área do triângulo é: " + (base * altura) / 2);
+  function calcularAreaQuadrado(lado) {
+    alert("O valor da área do quadrado é: " + (lado * lado));
   }
-  function calcularAreaTriangulo(base, altura) {
-    alert("O valor da área do triângulo é: " + (base * altura) / 2);
+  function calcularAreaTrapezio(baseMaior, baseMenor, altura) {
+    alert("O valor da área do trapézio é: " + ((baseMaior + baseMenor) * altura) / 2);
   }
-  function calcularAreaTriangulo(base, altura) {
-    alert("O valor da área do triângulo é: " + (base * altura) / 2);
-  }
-  function calcularAreaTriangulo(base, altura) {
-    alert("O valor da área do triângulo é: " + (base * altura) / 2);
+  function calcularAreaCirculo(raio) {
+    alert("O valor da área do círculo é: " + parseFloat(3.14) * (raio * raio));
   }
